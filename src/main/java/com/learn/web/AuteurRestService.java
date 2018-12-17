@@ -1,4 +1,4 @@
-package com.learn.web;
+/*package com.learn.web;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestClientException;
+
 import com.learn.entities.Auteur;
 import com.learn.dao.AuteurRepository;
 
@@ -42,3 +44,4 @@ public class AuteurRestService {
 		return auteurRepository.save(at);
 	}
 }
+*/

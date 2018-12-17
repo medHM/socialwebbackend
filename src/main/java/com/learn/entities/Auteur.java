@@ -14,27 +14,30 @@ public class Auteur implements Serializable{
 	private Long id;
 	private String nom;
 	private String prenom;
+	private String bio;
 	@OneToMany(mappedBy="auteur", fetch=FetchType.LAZY)
 	private Collection<Livre>livres;
 	public Auteur() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-		
-	public Auteur(String nom, String prenom) {
-		super();
-		this.nom = nom;
-		this.prenom = prenom;
-	}
+	
 	
 	public Long getId() {
 		return id;
 	}
 
+	public Auteur(String nom, String prenom, String bio) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.bio = bio;
+	}
+
+
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 	public String getNom() {
 		return nom;
 	}
@@ -46,5 +49,16 @@ public class Auteur implements Serializable{
 	}
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
+	}
+
+
+	public String getBio() {
+		return bio;
+	}
+
+
+	public void setBio(String bio) {
+		this.bio = bio;
 	}	
+	
 }

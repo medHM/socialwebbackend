@@ -3,9 +3,9 @@ package com.learn.dao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.learn.entities.Auteur;
+import com.learn.entities.Post;
 
 @CrossOrigin("*")
-public interface AuteurRepository extends JpaRepository<Auteur, Long>{
+public interface PostRepository extends JpaRepository<Post, Long>{
 
 }
